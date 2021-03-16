@@ -1,0 +1,48 @@
+.navBG {
+  background-color: #005b96;
+}
+.pro {
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #16c79a;
+}
+.shop {
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #eff7e1;
+}
+.navbrand {
+  border-radius: 100%;
+  border-bottom: 2px solid #f4f4f4;
+  padding: 7px;
+}
+body {
+  background-color: #fff;
+}
+
+main {
+  min-height: 80vh;
+}
+
+.rating span {
+  margin: 1px;
+}
+h1 {
+  font-size: 1.8rem;
+  padding: 1rem 0;
+}
+h2 {
+  font-size: 1.4rem;
+  padding: 0.5rem 0;
+}
+h3 {
+  padding: 1rem 0;
+}
+footer {
+  background-color: #005b96;
+}
+.footerTextColor {
+  color: #a0c1b8;
+}
