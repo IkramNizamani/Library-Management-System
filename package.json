@@ -1,7 +1,7 @@
 {
-  "name": "proshop-project",
+  "name": "clmanagement-project",
   "version": "1.0.0",
-  "description": "MERN stack E-Commerce Shopping Web App.",
+  "description": "MERN stack Central Library Management Web App.",
   "main": "server.js",
   "type": "module",
   "scripts": {
