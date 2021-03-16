@@ -27,7 +27,7 @@ const ProfileScreen = ({ history }) => {
 
   useEffect(() => {
     if (!userInfo) {
-      history.push('/')
+      history.push('/login')
     } else {
       if (!user.name) {
         dispatch(getUserDetails('profile'))
@@ -62,7 +62,7 @@ const ProfileScreen = ({ history }) => {
   return (
     <Row>
       <Col md='6'>
-        {userInfo.isAdmin ? <h2>Admin Profile</h2> : <h2>Student Profile</h2>}
+        <h2>User Profile</h2>
         {message && <Message variant='danger'>{message}</Message>}
         {error && <Message variant='danger'>{error}</Message>}
         {success && (
