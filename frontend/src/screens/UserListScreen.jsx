@@ -56,7 +56,6 @@ const UserListScreen = ({ history, match }) => {
               <th>EMAIL</th>
               <th>ROLL-NUMBER</th>
               <th>PHONE</th>
-              <th>EMAIL</th>
               <th></th>
             </tr>
           </thead>

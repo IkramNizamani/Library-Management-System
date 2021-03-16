@@ -21,7 +21,7 @@ const SearchBox = ({ history }) => {
             type='text'
             name='q'
             onChange={(e) => setKeyword(e.target.value)}
-            placeholder='Search Users...'
+            placeholder='Search Students...'
           ></Form.Control>
         </Col>
         <Col md='2' className='p-0'>
