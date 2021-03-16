@@ -43,7 +43,7 @@ const UserListScreen = ({ history, match }) => {
   return (
     <>
       <Route render={({ history }) => <SearchBox history={history} />} />
-      <h1>Users</h1>
+      <h1>Students</h1>
       {loading ? (
         <Loader />
       ) : error ? (

@@ -89,14 +89,14 @@ const UserEditScreen = ({ match, history }) => {
       <FormContainer>
         <Row>
           <Col>
-            <h1>Edit User</h1>
+            <h1>Edit Student</h1>
           </Col>
           <Col className='text-right my-2'>
             <Link
               onClick={userBookHistoryHandler}
               className='btn  btn-outline-info'
             >
-              User Book History
+              Student Book History
             </Link>
           </Col>
         </Row>
@@ -165,7 +165,7 @@ const UserEditScreen = ({ match, history }) => {
                     variant='outline-success'
                     className='my-3'
                   >
-                    Update User
+                    Update Student
                   </Button>
                 </Form>
                 <h1>Add Book</h1>
