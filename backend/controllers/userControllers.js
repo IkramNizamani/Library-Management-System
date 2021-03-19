@@ -201,14 +201,14 @@ const updateUser = asyncHandler(async (req, res) => {
 const addBookToUser = asyncHandler(async (req, res) => {
   const currentDate = new Date()
 
-  const { bookName, bookID, returnDate, phoneNumber, rollNumber } = req.body
+  const { bookName, ISBN, returnDate } = req.body
 
   const user = await User.findById(req.params.id)
 
   if (user) {
     const book = {
       bookName,
-      bookID,
+      ISBN,
       bookRefUser: req.params.id,
       returnDate,
       issuedAt: currentDate,

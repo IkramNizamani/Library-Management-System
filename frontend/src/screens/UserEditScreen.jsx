@@ -22,7 +22,7 @@ const UserEditScreen = ({ match, history }) => {
   const [phoneNumber, setPhoneNumber] = useState('')
 
   const [bookName, setBookName] = useState('')
-  const [isbn, setISBN] = useState('')
+  const [ISBN, setISBN] = useState('')
   const [returnDate, setReturnDate] = useState(null)
 
   const userDetails = useSelector((state) => state.userDetails)
@@ -69,7 +69,7 @@ const UserEditScreen = ({ match, history }) => {
       userBookAdd({
         bookRefUser: userId,
         bookName,
-        isbn,
+        ISBN,
         returnDate,
       })
     )
@@ -174,8 +174,8 @@ const UserEditScreen = ({ match, history }) => {
                     <Form.Label>ISBN</Form.Label>
                     <Form.Control
                       type='text'
-                      placeholder='Enter book id'
-                      value={isbn}
+                      placeholder='Enter isbn'
+                      value={ISBN}
                       onChange={(e) => {
                         setISBN(e.target.value)
                       }}
