@@ -22,7 +22,7 @@ const UserHistoryScreen = () => {
               <tr>
                 <th>BOOK-ID</th>
                 <th>BOOK NAME</th>
-                <th>ISSUE DATE</th>
+                <th>ISSUED AT</th>
                 <th>RETURN DATE</th>
                 <th>RETURN</th>
               </tr>
