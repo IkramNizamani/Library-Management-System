@@ -95,7 +95,9 @@ const RegisterScreen = ({ location, history }) => {
         </Form.Group>
 
         <Form.Group controlId='rollnumber'>
-          <Form.Label>Roll Number</Form.Label>
+          <Form.Label>
+            Roll Number <span style={{ color: 'red' }}>(2K17/CSE/...)</span>
+          </Form.Label>
           <Form.Control
             type='text'
             placeholder='Enter roll number'
@@ -107,7 +109,9 @@ const RegisterScreen = ({ location, history }) => {
         </Form.Group>
 
         <Form.Group controlId='phonenumber'>
-          <Form.Label>Phone Number</Form.Label>
+          <Form.Label>
+            Phone Number <span style={{ color: 'red' }}>(03XZ-YYYYYYY)</span>
+          </Form.Label>
           <Form.Control
             type='text'
             placeholder='Enter phone number'

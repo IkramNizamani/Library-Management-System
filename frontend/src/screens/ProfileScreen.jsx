@@ -22,6 +22,9 @@ const ProfileScreen = ({ history }) => {
   const userLogin = useSelector((state) => state.userLogin)
   const { userInfo } = userLogin
 
+  const userRegister = useSelector((state) => state.userRegister)
+  const { userInfo: userRegisterInfo } = userRegister
+
   const userUpdateProfile = useSelector((state) => state.userUpdateProfile)
   const { success } = userUpdateProfile
 
@@ -69,7 +72,7 @@ const ProfileScreen = ({ history }) => {
           <Message variant='success'>Profile Updated Successfully</Message>
         )}
         {loading && <Loader />}
-        {!userInfo.isAdmin ? (
+        {userRegisterInfo.isAdmin ? (
           <Form onSubmit={submitHandler}>
             <Form.Group controlId='name'>
               <Form.Label>Name</Form.Label>
@@ -91,30 +94,6 @@ const ProfileScreen = ({ history }) => {
                 value={email}
                 onChange={(e) => {
                   setEmail(e.target.value)
-                }}
-              ></Form.Control>
-            </Form.Group>
-
-            <Form.Group controlId='rollnumber'>
-              <Form.Label>Roll Number</Form.Label>
-              <Form.Control
-                type='text'
-                placeholder='Roll number'
-                value={rollNumber}
-                onChange={(e) => {
-                  setRollNumber(e.target.value)
-                }}
-              ></Form.Control>
-            </Form.Group>
-
-            <Form.Group controlId='phonenumber'>
-              <Form.Label>Phone Number</Form.Label>
-              <Form.Control
-                type='text'
-                placeholder='Phone number'
-                value={phoneNumber}
-                onChange={(e) => {
-                  setPhoneNumber(e.target.value)
                 }}
               ></Form.Control>
             </Form.Group>
@@ -169,6 +148,30 @@ const ProfileScreen = ({ history }) => {
                 value={email}
                 onChange={(e) => {
                   setEmail(e.target.value)
+                }}
+              ></Form.Control>
+            </Form.Group>
+
+            <Form.Group controlId='rollnumber'>
+              <Form.Label>Roll Number</Form.Label>
+              <Form.Control
+                type='text'
+                placeholder='Roll number'
+                value={rollNumber}
+                onChange={(e) => {
+                  setRollNumber(e.target.value)
+                }}
+              ></Form.Control>
+            </Form.Group>
+
+            <Form.Group controlId='phonenumber'>
+              <Form.Label>Phone Number</Form.Label>
+              <Form.Control
+                type='text'
+                placeholder='Phone number'
+                value={phoneNumber}
+                onChange={(e) => {
+                  setPhoneNumber(e.target.value)
                 }}
               ></Form.Control>
             </Form.Group>
