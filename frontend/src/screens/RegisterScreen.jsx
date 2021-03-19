@@ -45,7 +45,7 @@ const RegisterScreen = ({ location, history }) => {
       {message && <Message variant='danger'>{message}</Message>}
       {error && <Message variant='danger'>{error}</Message>}
       {loading && <Loader />}
-      <Form onSubmit={submitHandler}>
+      <Form onSubmit={submitHandler} autoComplete='off'>
         <Form.Group controlId='name'>
           <Form.Label>Name</Form.Label>
           <Form.Control

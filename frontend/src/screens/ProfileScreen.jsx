@@ -73,7 +73,7 @@ const ProfileScreen = ({ history }) => {
         )}
         {loading && <Loader />}
         {userRegisterInfo.isAdmin ? (
-          <Form onSubmit={submitHandler}>
+          <Form onSubmit={submitHandler} autoComplete='off'>
             <Form.Group controlId='name'>
               <Form.Label>Name</Form.Label>
               <Form.Control

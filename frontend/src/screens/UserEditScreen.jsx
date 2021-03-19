@@ -111,7 +111,7 @@ const UserEditScreen = ({ match, history }) => {
           <>
             <Row>
               <Col>
-                <Form onSubmit={submitUserHandler}>
+                <Form onSubmit={submitUserHandler} autoComplete='off'>
                   <Form.Group controlId='name'>
                     <Form.Label>Name</Form.Label>
                     <Form.Control
@@ -169,7 +169,7 @@ const UserEditScreen = ({ match, history }) => {
                   </Button>
                 </Form>
                 <h1>Add Book</h1>
-                <Form onSubmit={submitBookHandler}>
+                <Form onSubmit={submitBookHandler} autoComplete='off'>
                   <Form.Group controlId='isbn'>
                     <Form.Label>ISBN</Form.Label>
                     <Form.Control
