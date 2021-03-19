@@ -20,7 +20,7 @@ const UserHistoryScreen = () => {
           <Table striped bordered hover responsive className='table-sm'>
             <thead>
               <tr>
-                <th>BOOK-ID</th>
+                <th>ISBN</th>
                 <th>BOOK NAME</th>
                 <th>ISSUED AT</th>
                 <th>RETURN DATE</th>
@@ -30,7 +30,7 @@ const UserHistoryScreen = () => {
             <tbody>
               {user.books.map((book) => (
                 <tr key={book._id}>
-                  <td>{book.bookID}</td>
+                  <td>{book.ISBN}</td>
                   <td>{book.bookName}</td>
                   <td>{book.issuedAt}</td>
                   <td>{book.returnDate}</td>

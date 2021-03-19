@@ -22,7 +22,7 @@ const UserEditScreen = ({ match, history }) => {
   const [phoneNumber, setPhoneNumber] = useState('')
 
   const [bookName, setBookName] = useState('')
-  const [bookID, setBookID] = useState('')
+  const [isbn, setISBN] = useState('')
   const [returnDate, setReturnDate] = useState(null)
 
   const userDetails = useSelector((state) => state.userDetails)
@@ -69,7 +69,7 @@ const UserEditScreen = ({ match, history }) => {
       userBookAdd({
         bookRefUser: userId,
         bookName,
-        bookID,
+        isbn,
         returnDate,
       })
     )
@@ -170,14 +170,14 @@ const UserEditScreen = ({ match, history }) => {
                 </Form>
                 <h1>Add Book</h1>
                 <Form onSubmit={submitBookHandler}>
-                  <Form.Group controlId='bookid'>
-                    <Form.Label>Book ID</Form.Label>
+                  <Form.Group controlId='isbn'>
+                    <Form.Label>ISBN</Form.Label>
                     <Form.Control
                       type='text'
                       placeholder='Enter book id'
-                      value={bookID}
+                      value={isbn}
                       onChange={(e) => {
-                        setBookID(e.target.value)
+                        setISBN(e.target.value)
                       }}
                     ></Form.Control>
                   </Form.Group>

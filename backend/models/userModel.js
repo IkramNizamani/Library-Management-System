@@ -3,7 +3,7 @@ import bcrypt from 'bcryptjs'
 
 const bookSchema = mongoose.Schema(
   {
-    bookID: {
+    ISBN: {
       type: String,
       required: true,
     },
