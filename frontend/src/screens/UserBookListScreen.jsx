@@ -35,7 +35,7 @@ const UserBookListScreen = ({ match }) => {
               <th>BOOK NAME</th>
               <th>ISSUED AT</th>
               <th>RETURN DATE</th>
-              <th>RETURN</th>
+              <th>RETURNED</th>
             </tr>
           </thead>
           <tbody>
@@ -43,8 +43,8 @@ const UserBookListScreen = ({ match }) => {
               <tr key={book._id}>
                 <td>{book.ISBN}</td>
                 <td>{book.bookName}</td>
-                <td>{book.issuedAt}</td>
-                <td>{book.returnDate}</td>
+                <td>{book.createdAt.substring(0, 10)}</td>
+                <td>{book.returnDate.substring(0, 10)}</td>
                 <td>
                   {' '}
                   {book.isReturn ? (

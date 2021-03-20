@@ -15,10 +15,6 @@ const bookSchema = mongoose.Schema(
       type: String,
       required: true,
     },
-    issuedAt: {
-      type: Date,
-      required: true,
-    },
     returnDate: {
       type: Date,
       required: true,

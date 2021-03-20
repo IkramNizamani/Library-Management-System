@@ -22,8 +22,8 @@ const ProfileScreen = ({ history }) => {
   const userLogin = useSelector((state) => state.userLogin)
   const { userInfo } = userLogin
 
-  const userRegister = useSelector((state) => state.userRegister)
-  const { userInfo: userRegisterInfo } = userRegister
+  // const userRegister = useSelector((state) => state.userRegister)
+  // const { userInfo: userRegisterInfo } = userRegister
 
   const userUpdateProfile = useSelector((state) => state.userUpdateProfile)
   const { success } = userUpdateProfile
@@ -72,7 +72,7 @@ const ProfileScreen = ({ history }) => {
           <Message variant='success'>Profile Updated Successfully</Message>
         )}
         {loading && <Loader />}
-        {userRegisterInfo.isAdmin ? (
+        {userInfo && userInfo.isAdmin ? (
           <Form onSubmit={submitHandler} autoComplete='off'>
             <Form.Group controlId='name'>
               <Form.Label>Name</Form.Label>
