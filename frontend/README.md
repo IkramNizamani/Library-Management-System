@@ -1,3 +1,6 @@
+# Want To See This In Your Browser?
+Make A New Folder Name It Whatever You Want Put All The Project Files In It, then Open The Terminal CD Over That Folder and Then Type "npm run dev" To Start The Server And Front-End Of Project At A Time. Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
